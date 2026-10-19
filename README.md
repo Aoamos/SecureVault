@@ -1,8 +1,6 @@
-# SecureVault - Secure Hybrid Wallet for Nigeria
+# SecureVault | AES-256 Encrypted Transactions + 2FA
 
-A secure money transfer system built with Python Flask, AES-256 encryption and 2FA.
-
-**Stack:** Python, Flask, Fernet, HTML/CSS, MVC
+Live Demo Screenshots below ↓ Built for MSc Cybersecurity portfolio.
 
 ![Landing](landing.png)
 ![Dashboard](dashboard.png)
