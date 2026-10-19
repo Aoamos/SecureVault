@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .card {
+        border: 1px solid #ccc;
+        margin: 10px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Welcome to SecureVault</h2>
+    <div class="card">
+      <h3>Wallet Balance</h3>
+      <p>Naira Balance: ₦{naira}</p>
+      <p>USDT: ${usdt}</p>
+    </div>
+    <form action="/send" method="post">
+      <input type="text" name="amount" placeholder="Amount to send" />
+      <input type="text" name="code" placeholder="Enter 2FA Code: 123456" />
+      <button>Send Securely</button>
+    </form>
+  </body>
+</html>
