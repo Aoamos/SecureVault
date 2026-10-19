@@ -1,52 +1,150 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SecureVault Login</title>
+    <title>SecureVault - Secure Hybrid Wallet</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+      * {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial;
       }
-      .login-container {
-        background-color: #fff;
+      body {
+        background: #0f172a;
+        color: white;
+      }
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: radial-gradient(circle at 30% 20%, #1e40af 0%, #0f172a 50%);
       }
-      .form-group {
-        margin-bottom: 15px;
+      .content {
+        max-width: 900px;
+        text-align: center;
       }
-      label {
-        display: block;
-        margin-bottom: 5px;
+      .badge {
+        background: #1e293b;
+        color: #38bdf8;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
       }
-      input[type="text"],
-      input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+      h1 {
+        font-size: 52px;
+        margin: 20px 0;
+        line-height: 1.1;
       }
-      button {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+      h1 span {
+        color: #38bdf8;
+      }
+      p.sub {
+        color: #94a3b8;
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+      }
+      .buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin: 30px 0;
+      }
+      .btn-primary {
+        background: #38bdf8;
+        color: #0f172a;
+        padding: 14px 32px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .btn-secondary {
+        background: #1e293b;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 10px;
+        text-decoration: none;
+        border: 1px solid #334155;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 60px;
+        text-align: left;
+      }
+      .feat {
+        background: rgba(30, 41, 59, 0.6);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #1e293b;
+      }
+      .feat h3 {
+        color: #38bdf8;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .feat p {
+        color: #94a3b8;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      @media (max-width: 700px) {
+        h1 {
+          font-size: 36px;
+        }
+        .features {
+          grid-template-columns: 1fr;
+        }
+        .buttons {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
   <body>
-    <h2>Secure Hybrid Wallet for Fiat & Crypto</h2>
-    <a href="/dashboard"><button>Enter Dashboard</button></a>
+    <div class="hero">
+      <div class="content">
+        <h1>Secure <span>Hybrid Wallet</span><br />for Fiat & Crypto</h1>
+        <p class="sub">
+          A production-ready fintech vault built with Flask, AES-256 encryption,
+          PBKDF2 key derivation & 2FA. Bridging Naira and USDT securely.
+        </p>
+
+        <div class="buttons">
+          <a href="/dashboard" class="btn-primary">Enter Dashboard →</a>
+          <a href="https://github.com/Aoamos/SecureVault" class="btn-secondary"
+            >View on GitHub</a
+          >
+        </div>
+
+        <div class="features">
+          <div class="feat">
+            <h3>🔐 AES-256 Encryption</h3>
+            <p>
+              Military-grade encryption with secure PBKDF2 key management for
+              all wallet data.
+            </p>
+          </div>
+          <div class="feat">
+            <h3>💱 Dual Currency</h3>
+            <p>
+              Seamlessly manage Naira (₦) and USDT ($) balances in one secure
+              vault.
+            </p>
+          </div>
+          <div class="feat">
+            <h3>🛡️ 2FA Security</h3>
+            <p>
+              Time-based One-Time Passwords + Flask-Login session hardening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,6 +1,8 @@
 # SecureVault - Secure Hybrid Wallet for Nigeria
 
-![Dashboard Screenshot] (dashboard.png)
+![Landing](landing.png)
+![Dashboard](dashboard.png)
+![Success](success.png)
 
 A secure Flask-based hybrid wallet that manages both Naira and USDT balances, designed to solve local payment challenges in Nigeria with encrypted transactions.
 
