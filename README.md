@@ -1,6 +1,6 @@
 # SecureVault | AES-256 Encrypted Transactions + 2FA
 
-Live Demo Screenshots below ↓ Built for MSc Cybersecurity portfolio.
+Live Demo Screenshots below ↓ Built.
 
 ![Landing](landing.png)
 ![Dashboard](dashboard.png)
